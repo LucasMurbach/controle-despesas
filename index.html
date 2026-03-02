@@ -966,10 +966,9 @@
     if (!db || !currentUser) return;
     try {
       const q = query(
-        collection(db, 'expenses'),
-        where('uid', '==', currentUser.uid),
-        orderBy('date', 'desc')
-      );
+      collection(db, 'expenses'),
+      orderBy('date', 'desc')
+    );
       const snap = await getDocs(q);
       expenses = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       renderExpenses();
@@ -1127,4 +1126,5 @@
 </script>
 
 </body>
+
 </html>
