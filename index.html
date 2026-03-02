@@ -768,31 +768,23 @@
         <div class="cat-grid">
           <div class="cat-option" data-cat="food" onclick="selectCat(this)">
             <span class="cat-emoji">🍔</span>
-            <span class="cat-name">Alimentação</span>
+            <span class="cat-name">Compra do Mês</span>
           </div>
           <div class="cat-option" data-cat="transport" onclick="selectCat(this)">
             <span class="cat-emoji">🚗</span>
             <span class="cat-name">Transporte</span>
           </div>
-          <div class="cat-option" data-cat="health" onclick="selectCat(this)">
-            <span class="cat-emoji">💊</span>
-            <span class="cat-name">Saúde</span>
-          </div>
           <div class="cat-option" data-cat="leisure" onclick="selectCat(this)">
             <span class="cat-emoji">🎮</span>
-            <span class="cat-name">Lazer</span>
+            <span class="cat-name">Gasto Fodase</span>
           </div>
           <div class="cat-option" data-cat="home" onclick="selectCat(this)">
             <span class="cat-emoji">🏠</span>
-            <span class="cat-name">Casa</span>
+            <span class="cat-name">Manutenção</span>
           </div>
           <div class="cat-option" data-cat="edu" onclick="selectCat(this)">
             <span class="cat-emoji">📚</span>
-            <span class="cat-name">Educação</span>
-          </div>
-          <div class="cat-option" data-cat="clothes" onclick="selectCat(this)">
-            <span class="cat-emoji">👕</span>
-            <span class="cat-name">Roupas</span>
+            <span class="cat-name">Gasto em festas</span>
           </div>
           <div class="cat-option selected" data-cat="other" onclick="selectCat(this)">
             <span class="cat-emoji">📦</span>
@@ -830,12 +822,12 @@
   const MONTHS_PT = ['janeiro','fevereiro','março','abril','maio','junho',
                      'julho','agosto','setembro','outubro','novembro','dezembro'];
   const CAT_ICONS = {
-    food:'🍔', transport:'🚗', health:'💊', leisure:'🎮',
-    home:'🏠', edu:'📚', clothes:'👕', other:'📦'
+    food:'🍔', leisure:'🎮',
+    home:'🏠', edu:'📚',  other:'📦'
   };
   const CAT_CLASSES = {
-    food:'cat-food', transport:'cat-transport', health:'cat-health',
-    leisure:'cat-leisure', home:'cat-home', edu:'cat-other', clothes:'cat-other', other:'cat-other'
+    food:'cat-food',
+    leisure:'cat-leisure', home:'cat-home', edu:'cat-other', other:'cat-other'
   };
 
   // ─── CONFIG ──────────────────────────────────────────────────
@@ -1128,3 +1120,4 @@
 </body>
 
 </html>
+
